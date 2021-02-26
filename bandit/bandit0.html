@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<nav id="navbar">
+    <header>Overthewire</header>
+    <ul>
+        <li><a class="nav-link" href="bandit.html">Bandit</a></li>
+        <li><a class="nav-link" href="bandit0.html">Level 0</a></li>
+        <li><a class="nav-link" href="bandit1.html">Level 0 → Level 1</a></li>
+        <li><a class="nav-link" href="bandit2.html">Level 1 → Level 2</a></li>
+        <li><a class="nav-link" href="bandit3.html">Level 2 → Level 3</a></li>
+        <li><a class="nav-link" href="bandit4.html">Level 3 → Level 4</a></li>
+        <li><a class="nav-link" href="bandit5.html">Level 4 → Level 5</a></li>
+        <li><a class="nav-link" href="bandit6.html">Level 5 → Level 6</a></li>
+        <li><a class="nav-link" href="bandit7.html">Level 6 → Level 7</a></li>
+        <li><a class="nav-link" href="bandit8.html">Level 7 → Level 8</a></li>
+        <li><a class="nav-link" href="bandit9.html">Level 8 → Level 9</a></li>
+        <li><a class="nav-link" href="bandit10.html">Level 9 → Level 10</a></li>
+        <li><a class="nav-link" href="bandit11.html">Level 10 → Level 11</a></li>
+        <li><a class="nav-link" href="bandit12.html">Level 11 → Level 12</a></li>
+        <li><a class="nav-link" href="bandit13.html">Level 12 → Level 13</a></li>
+        <li><a class="nav-link" href="bandit14.html">Level 13 → Level 14</a></li>
+        <li><a class="nav-link" href="bandit15.html">Level 14 → Level 15</a></li>
+        <li><a class="nav-link" href="bandit16.html">Level 15 → Level 16</a></li>
+        <li><a class="nav-link" href="bandit17.html">Level 16 → Level 17</a></li>
+        <li><a class="nav-link" href="bandit18.html">Level 17 → Level 18</a></li>
+        <li><a class="nav-link" href="bandit19.html">Level 18 → Level 19</a></li>
+        <li><a class="nav-link" href="bandit20.html">Level 19 → Level 20</a></li>
+        <li><a class="nav-link" href="bandit21.html">Level 20 → Level 21</a></li>
+        <li><a class="nav-link" href="bandit22.html">Level 21 → Level 22</a></li>
+        <li><a class="nav-link" href="bandit23.html">Level 22 → Level 23</a></li>
+        <li><a class="nav-link" href="bandit24.html">Level 23 → Level 24</a></li>
+        <li><a class="nav-link" href="bandit25.html">Level 24 → Level 25</a></li>
+        <li><a class="nav-link" href="bandit26.html">Level 25 → Level 26</a></li>
+        <li><a class="nav-link" href="bandit27.html">Level 26 → Level 27</a></li>
+        <li><a class="nav-link" href="bandit28.html">Level 27 → Level 28</a></li>
+        <li><a class="nav-link" href="bandit29.html">Level 28 → Level 29</a></li>
+        <li><a class="nav-link" href="bandit30.html">Level 29 → Level 30</a></li>
+        <li><a class="nav-link" href="bandit31.html">Level 30 → Level 31</a></li>
+        <li><a class="nav-link" href="bandit32.html">Level 31 → Level 32</a></li>
+        <li><a class="nav-link" href="bandit33.html">Level 32 → Level 33</a></li>
+        <li><a class="nav-link" href="bandit34.html">Level 33 → Level 34</a></li>
+    </ul>
+    <h2 style="margin-left: 30px">Released</h2>
+    <ul>
+        <li><a class="nav-link" href="blogs.html">Blogs</a></li>
+    </ul>
+</nav>
+<main id="main-doc">
+    <section class="main-section" id="level0">
+        <article>
+            <header>Bandit Level 0</header>
+            <h2>Level Goal</h2>
+            <p>The goal of this level is for you to log into the game using SSH. The host to which you need to connect
+                is <strong>bandit.labs.overthewire.org</strong>, on port 2220. The username is <strong>bandit0</strong> and the password is <strong>bandit0.</strong> Once
+                logged in, go to the Level 1 page to find out how to beat Level 1.</p>
+            <h2>Commands you may need to solve this level</h2>
+            <p>ls, cd, cat, file, du, find</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Syntax</th>
+                        <th>Description</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ls</td>
+                        <td>ls [OPTION]... [FILE]...</td>
+                        <td>List information about the FILEs (the current directory by default). Sort entries
+                            alphabetically if none of
+                            -cftuvSUX nor --sort is specified.</td>
+                        <td>-a, -A, --author. -b, --block-size=SIZE</td>
+                    </tr>
+                    <tr>
+                        <td>cd</td>
+                        <td>cd [-L|[-P [-e]] [-@]] [dir]</td>
+                        <td>Change the current directory to DIR. The default DIR is the value of the HOME shell
+                            variable.</td>
+                        <td>-L, -P, -e, -@</td>
+                    </tr>
+                    <tr>
+                        <td>cat</td>
+                        <td>cat [OPTION]... [FILE]...</td>
+                        <td>Concatenate files and print on the standard output.</td>
+                        <td>-A, -b, -e, -E, -n, -s</td>
+                    </tr>
+                    <tr>
+                        <td>file</td>
+                        <td>file [-bcdEhiklLNnprsSvzZ0] [--apple] [--extension] [--mime-encoding] [--mime-type] [-e
+                            testname] [-F separator]
+                            [-f namefile] [-m magicfiles] [-P name=value] file ...
+                            file -C [-m magicfiles]
+                            file [--help]</td>
+                        <td>Determine file type.</td>
+                        <td>--apple, --extension, --mime-encoding, --mime-type, -e testname, -F separator, [-f
+                            namefile], -m magicfiles, -P name=value</td>
+                    </tr>
+                    <tr>
+                        <td>du</td>
+                        <td>du [OPTION]... [FILE]...
+                            du [OPTION]... --files0-from=F</td>
+                        <td>Estimate file space usage.</td>
+                        <td>-0, -a, -apparent-size, -B, -b</td>
+                    </tr>
+                    <tr>
+                        <td>find</td>
+                        <td>find [-H] [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [expression]</td>
+                        <td>Search for files in a directory hierarchy</td>
+                        <td>-H, -L, -P, -D, -Olevel, starting-point</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Solution</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Host</th>
+                        <th>Port</th>
+                        <th>Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>bandit0@bandit.labs.overthewire.org</td>
+                        <td>2220</td>
+                        <td>bandit0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+</main>
+
+</html>
